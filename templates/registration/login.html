@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form action="" method="POST">
+    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+    <table>
+        <tbody>
+            <tr>
+                <td>UserName：</td>
+                <td><label><input type="text" name="username"></label></td>
+            </tr>
+            <tr>
+                <td>PassWord：</td>
+                <td><label><input type="password" name="password"></label></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">
+                        <input type="checkbox" name="remember" value="1">Remember Me
+                    </label>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Login"> <input type="submit" value="Signup"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>
